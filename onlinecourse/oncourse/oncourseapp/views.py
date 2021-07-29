@@ -48,6 +48,11 @@ def delete_data(request,id):
         row.delete()
         return HttpResponseRedirect('/oncourse')
 
+'''def user_course(request):
+    if request.user.is_authenticated:
+        return render(request, 'profile.html', {'name': request.user})
+    else:
+        return HttpResponseRedirect('/login')'''
 
 
 

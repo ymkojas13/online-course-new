@@ -23,7 +23,7 @@
                     </table>
 
                  <input type="submit" class="btn btn-success" value="Update">
-                 <a href="{% url 'oncoursehtml'%}" class="btn btn-info">Home</a>
+                 <a href="{% url 'oncourse'%}" class="btn btn-info">Home</a>
                  {% if messages %}
         {% for message in messages %}
         <span {% if message.tags %} class="{{message.tags}}"{% endif %}>{{message}}</span>

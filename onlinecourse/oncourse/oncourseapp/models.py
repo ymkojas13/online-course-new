@@ -11,5 +11,14 @@ class online(models.Model):
     Gender=models.CharField(max_length=50)
     Password=models.CharField(max_length=50)
     Confirm_password=models.CharField(max_length=50)
-    Software_courses=models.CharField(max_length=50)
+    soft_courses=(
+        ('Python','Python'),
+        ('Java','Java'),
+        ('.Net','.Net'),('Aws','Aws'),
+        ('Datascince','Datascince'),
+        ('UI','UI'),
+        ('Mysql','Mysql'),
+        ('selenium','selenium')
+    )
+    Software_courses = models.CharField(choices=soft_courses,max_length=50)
 
